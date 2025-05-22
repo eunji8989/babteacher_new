@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home design.css" />
   <title>밥선생</title>
-  <link rel="stylesheet" href="..\css\main.css" />
 </head>
+
 <body>
-  <header>
-    <div class="left-bar">
-      <img src="logo.png" alt="로고" class="logo" />
+<header class="header">
+  <div class="header-overlay"></div>
+  <div class="header-content">
+    <div class="logo">
+      <img src="밥선생 머리.png" alt="로고 캐릭터" />
       <span class="site-name">밥선생</span>
     </div>
-    <nav class="center-bar">
-      <button class="nav-btn">밥상</button>
-      <button class="nav-btn">기억쪽</button>
-      <button class="nav-btn">나의 공간</button>
+    <nav class="menu">
+      <a href=".\all.html">전체</a>
+      <a href=".\table.html">밥상</a>
+      <a href="..\bookmark-list\bookmark.html">기억쪽</a>
+      <a href="..\mypage\my-information.html">나의 공간</a>
+      <a href="..\search\search.html" class="search-button">
+        <img src="search icon.png" width="21" height="22"></img>
+        <span>검색어를 입력하시오.</span>
+      </a>
     </nav>
-    <div class="right-bar">
-      <button class="login-btn">로그인</button>
-      <button class="signup-btn">회원가입</button>
-    </div>
-  </header>
+    <nav class="menu2">
+      <div id="authButtons">
+        <a href="#" id="openSignup"><b>회원가입</b></a>
+        <a href="#" id="openLogin" class="login-button"><b>잇기</b></a>
+      </div>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <h1 class="main-title">오늘의 밥상</h1>
-    <section id="recipe-list" class="recipe-list">
-      <!-- 레시피 버튼들이 여기 JS로 들어갑니다 -->
-    </section>
-  </main>
+  <script src="home.js"></script>
 
-  <script src="..\js\main.js"></script>
 </body>
 </html>
